@@ -22,8 +22,11 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ParaPaca/frontend-mentor/tree/main/QR-code](https://github.com/ParaPaca/frontend-mentor/tree/main/QR-code)
+- Live Site URL: [https://parapaca.github.io/frontend-mentor/QR-code/](https://parapaca.github.io/frontend-mentor/QR-code/)
+
+
+## My process
 
 
 ### Built with
@@ -31,7 +34,6 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- Mobile-first workflow
 
 
 ### Continued development
@@ -56,7 +58,7 @@ Stay informed about the latest trends and innovations in the field of web develo
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - [https://github.com/ParaPaca](https://github.com/ParaPaca)
 - Frontend Mentor - [@ParaPaca](https://www.frontendmentor.io/profile/ParaPaca)
 - Twitter - [@ParaPaca](https://www.twitter.com/ParaPaca)
 
