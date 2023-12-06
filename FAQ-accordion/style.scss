@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+*,
+*::before,
+*::after {
+  font-family: "Work Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  // outline: none;
+}
+
+body {
+  background: #F9EEFF url(./assets/images/background-pattern-desktop.svg) no-repeat top center /auto;
+  width: 100%;
+  // min-width: 375px;
+  height: 100vh;
+  
+  main {
+    padding-top: 18.56dvh;
+    padding-top: 18.56vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+
+    .container {
+      background-color: #ffffff;
+      box-shadow: 0px 30px 60px hsla(292, 42%, 14%, .1);
+      max-width: 600px;
+      border-radius: 16px;
+      padding: 45px 40px 40px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      .faq-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.5rem;
+        margin-bottom: 35px;
+
+        h1 {
+          font-weight: 700;
+          font-size: 56px;
+          line-height: 100%;
+          color: #2f1533;
+        }
+      }
+
+      .article-wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        
+        &:not(:last-child) {
+          border-bottom: 2px solid #f9f0ff;
+          padding: 0 0 26px;
+          margin-bottom: 20px;
+        }
+
+        .heading-wrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          h2 {
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 1.5;
+            color: #2f1533;
+            transition: color ease-in-out .2s;
+            width: 90%;
+
+            &:hover {
+              color: #AD28EB;
+              transition: color ease-in-out .2s;
+              cursor: pointer;
+            }
+          }
+
+          .accordion {
+            border-radius: 100%;
+            background-color: transparent;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+          }
+
+        }
+
+        p {
+          padding-top: 24px;
+          font-size: 16px;
+          line-height: 1.5;
+          color: #8c6991;
+          display: none;
+        }
+      }
+    }
+  }
+
+}
+
+.minus {
+  background-image: url('./assets/images/icon-minus.svg');
+}
+.plus {
+  background-image: url('./assets/images/icon-plus.svg');
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: #3e52a3;
+  }
+}
+
+@media all and (min-width: 1441px) {
+  body {
+    background: #F9EEFF url(./assets/images/background-pattern-desktop.svg) no-repeat top center /100%;
+  }
+}
+
+@media all and (max-width: 600px) {
+  body main {
+    padding-top: 17.49dvh;
+    padding-top: 17.49vh;
+    
+    .container {
+      margin-inline: 24px;
+      border-radius: 8px;
+      padding: 28px 25px 25px;
+
+      .faq-wrapper {
+        margin-bottom: 25px;
+
+        img {
+          width: 25px;
+        }
+
+        h1 {
+          font-size: 32px;
+        }
+      }
+
+      .article-wrapper {
+        &:not(:last-child) {
+          border-bottom: 2px solid #f9f0ff;
+          padding: 0 0 20px;
+          margin-bottom: 18px;
+
+        }
+
+        .heading-wrapper h2 {
+          width: 80%;
+          font-size: 16px;
+          line-height: 1.2;
+        }
+
+        p {
+          padding-top: 22px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
