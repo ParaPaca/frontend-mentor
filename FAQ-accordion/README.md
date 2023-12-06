@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/ParaPaca/frontend-mentor/tree/main/FAQ-accordion](https://github.com/ParaPaca/frontend-mentor/tree/main/FAQ-accordion)
+- Live Site URL: [https://parapaca.github.io/frontend-mentor/FAQ-accordion/](https://parapaca.github.io/frontend-mentor/FAQ-accordion/)
 
 ## My process
 
