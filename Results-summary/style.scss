@@ -99,113 +99,116 @@ body {
 
       .card-2 {
         width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
 
         h3 {
           font-size: 24px;
           padding-bottom: 10px;
         }
 
-        article {
-          margin-top: 16px;
-          width: 100%;
-          display: grid;
-          grid-template-columns: 30px 1fr 1fr;
-          justify-content: space-between;
-          align-items: center;
-          align-content: center;
-          height: 56px;
-          border-radius: 12px;
-          padding: 18px 16px;
-          font-size: 18px;
-
-          h4 {
-            justify-self: flex-start;
-            line-height: 1;
-          }
-
-          p {
-            justify-self: flex-end;
-            font-weight: 800;
-            color: hsl(224, 30%, 27%);
-
-            span {
-              color: #9a9a9a;
-              padding-left: 7px;
+        #result-container {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          
+          article {
+            margin-top: 16px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 30px 1fr 1fr;
+            justify-content: space-between;
+            align-items: center;
+            align-content: center;
+            height: 56px;
+            border-radius: 12px;
+            padding: 18px 16px;
+            font-size: 18px;
+  
+            h4 {
+              justify-self: flex-start;
+              line-height: 1;
             }
-          }
-
-          &:nth-of-type(1) {
-            background-color: hsl(6, 100%, 98%);
-            transition: ease-in-out .15s background-color;
-            &:hover {
-              background-color: hsl(6, 100%, 88%);
+  
+            p {
+              justify-self: flex-end;
+              font-weight: 800;
+              color: hsl(224, 30%, 27%);
+  
+              span {
+                color: #9a9a9a;
+                padding-left: 7px;
+              }
+            }
+  
+            &:nth-of-type(1) {
+              background-color: hsl(6, 100%, 98%);
               transition: ease-in-out .15s background-color;
+              &:hover {
+                background-color: hsl(6, 100%, 88%);
+                transition: ease-in-out .15s background-color;
+                h4 {
+                  color: hsl(0, 100%, 47%);
+                  transition: ease-in-out .15s color;
+                }
+              }
               h4 {
-                color: hsl(0, 100%, 47%);
+                color: hsl(0, 100%, 67%);
                 transition: ease-in-out .15s color;
               }
             }
-            h4 {
-              color: hsl(0, 100%, 67%);
-              transition: ease-in-out .15s color;
-            }
-          }
-
-          &:nth-of-type(2) {
-            background-color: hsl(42, 100%, 97%);
-            transition: ease-in-out .15s background-color;
-            &:hover {
-              background-color: hsl(42, 100%, 87%);
+  
+            &:nth-of-type(2) {
+              background-color: hsl(42, 100%, 97%);
               transition: ease-in-out .15s background-color;
+              &:hover {
+                background-color: hsl(42, 100%, 87%);
+                transition: ease-in-out .15s background-color;
+                h4 {
+                  color: hsl(39, 100%, 36%);
+                  transition: ease-in-out .15s color;
+                }
+              }
               h4 {
-                color: hsl(39, 100%, 36%);
+                color: hsl(39, 100%, 56%);
                 transition: ease-in-out .15s color;
               }
             }
-            h4 {
-              color: hsl(39, 100%, 56%);
-              transition: ease-in-out .15s color;
-            }
-          }
-
-          &:nth-of-type(3) {
-            background-color: hsl(173, 53%, 97%);
-            transition: ease-in-out .15s background-color;
-            &:hover {
-              background-color: hsl(173, 53%, 87%);
+  
+            &:nth-of-type(3) {
+              background-color: hsl(173, 53%, 97%);
               transition: ease-in-out .15s background-color;
+              &:hover {
+                background-color: hsl(173, 53%, 87%);
+                transition: ease-in-out .15s background-color;
+                h4 {
+                  color: hsl(166, 100%, 17%);
+                  transition: ease-in-out .15s color;
+                }
+              }
               h4 {
-                color: hsl(166, 100%, 17%);
                 transition: ease-in-out .15s color;
+                color: hsl(166, 100%, 37%);
               }
             }
-            h4 {
-              transition: ease-in-out .15s color;
-              color: hsl(166, 100%, 37%);
-            }
-          }
-
-          &:nth-of-type(4) {
-            background-color: hsl(240, 71%, 97%);
-            transition: ease-in-out .15s background-color;
-            &:hover {
-              background-color: hsl(240, 71%, 87%);
+  
+            &:nth-of-type(4) {
+              background-color: hsl(240, 71%, 97%);
               transition: ease-in-out .15s background-color;
+              &:hover {
+                background-color: hsl(240, 71%, 87%);
+                transition: ease-in-out .15s background-color;
+                h4 {
+                  color: hsl(234, 85%, 35%);
+                  transition: ease-in-out .15s color;
+                }
+              }
               h4 {
-                color: hsl(234, 85%, 35%);
                 transition: ease-in-out .15s color;
+                color: hsl(234, 85%, 45%);
               }
             }
-            h4 {
-              transition: ease-in-out .15s color;
-              color: hsl(234, 85%, 45%);
-            }
           }
-        }
+        } 
 
         .continue {
           align-self: center;
