@@ -1,0 +1,309 @@
+*,
+*::before,
+*::after {
+  font-family: 'Hanken Grotesk', sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100vh;
+  width: 100%;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    .container {
+      background-color: #ffffff;
+      box-shadow: 6px 20px 40px hsla(221, 100%, 96%, 1);
+      width: 736px;
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 30px;
+
+      &,
+      .card-1 {
+        border-radius: 32px;
+      }
+
+      .card-1,
+      .card-2 {
+        padding: 45px 40px;
+      }
+
+      .card-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-align: center;
+        background-image: linear-gradient(hsl(251, 100%, 63%), hsl(242, 82%, 55%));
+        width: 50%;
+
+        h1,
+        h2 {
+          color: #ffffff;
+        }
+
+        h3 {
+          color: hsl(241, 100%, 89%);
+          font-size: 24px;
+          font-weight: 500;
+        }
+
+        .circle-result {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          background-image: linear-gradient(hsla(256, 72%, 46%, 1) -10%, hsla(241, 72%, 46%, .3) 60%, hsla(241, 72%, 46%, .05) 100%);
+          border-radius: 100%;
+          width: 200px;
+          height: 200px;
+          margin: 34px 0 28px;
+
+          h1 {
+            font-size: 70px;
+            font-weight: 800;
+            line-height: 1.1;
+          }
+
+          p {
+            color: #857CF4;
+            font-size: 18px;
+            font-weight: 700;
+          }
+        }
+
+        .description {
+          width: 90%;
+
+          h2 {
+            font-size: 32px;
+            font-weight: 500;
+            padding-bottom: 15px;
+          }
+
+          p {
+            font-size: 18px;
+            color: hsl(241, 100%, 89%);
+          }
+        }
+      }
+
+      .card-2 {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h3 {
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+
+        article {
+          margin-top: 16px;
+          width: 100%;
+          display: grid;
+          grid-template-columns: 30px 1fr 1fr;
+          justify-content: space-between;
+          align-items: center;
+          align-content: center;
+          height: 56px;
+          border-radius: 12px;
+          padding: 18px 16px;
+          font-size: 18px;
+
+          h4 {
+            justify-self: flex-start;
+            line-height: 1;
+          }
+
+          p {
+            justify-self: flex-end;
+            font-weight: 800;
+            color: hsl(224, 30%, 27%);
+
+            span {
+              color: #9a9a9a;
+              padding-left: 7px;
+            }
+          }
+
+          &:nth-of-type(1) {
+            background-color: hsl(6, 100%, 98%);
+            transition: ease-in-out .15s background-color;
+            &:hover {
+              background-color: hsl(6, 100%, 88%);
+              transition: ease-in-out .15s background-color;
+              h4 {
+                color: hsl(0, 100%, 47%);
+                transition: ease-in-out .15s color;
+              }
+            }
+            h4 {
+              color: hsl(0, 100%, 67%);
+              transition: ease-in-out .15s color;
+            }
+          }
+
+          &:nth-of-type(2) {
+            background-color: hsl(42, 100%, 97%);
+            transition: ease-in-out .15s background-color;
+            &:hover {
+              background-color: hsl(42, 100%, 87%);
+              transition: ease-in-out .15s background-color;
+              h4 {
+                color: hsl(39, 100%, 36%);
+                transition: ease-in-out .15s color;
+              }
+            }
+            h4 {
+              color: hsl(39, 100%, 56%);
+              transition: ease-in-out .15s color;
+            }
+          }
+
+          &:nth-of-type(3) {
+            background-color: hsl(173, 53%, 97%);
+            transition: ease-in-out .15s background-color;
+            &:hover {
+              background-color: hsl(173, 53%, 87%);
+              transition: ease-in-out .15s background-color;
+              h4 {
+                color: hsl(166, 100%, 17%);
+                transition: ease-in-out .15s color;
+              }
+            }
+            h4 {
+              transition: ease-in-out .15s color;
+              color: hsl(166, 100%, 37%);
+            }
+          }
+
+          &:nth-of-type(4) {
+            background-color: hsl(240, 71%, 97%);
+            transition: ease-in-out .15s background-color;
+            &:hover {
+              background-color: hsl(240, 71%, 87%);
+              transition: ease-in-out .15s background-color;
+              h4 {
+                color: hsl(234, 85%, 35%);
+                transition: ease-in-out .15s color;
+              }
+            }
+            h4 {
+              transition: ease-in-out .15s color;
+              color: hsl(234, 85%, 45%);
+            }
+          }
+        }
+
+        .continue {
+          align-self: center;
+          margin-top: 40px;
+          width: 100%;
+          background-color: hsl(224, 30%, 27%);
+          padding: 16px 0;
+          text-align: center;
+          border-radius: 40px;
+          color: #ffffff;
+          font-size: 18px;
+          transition: ease-in-out .15s background-color;
+
+          &:hover {
+            background-color: hsl(224, 30%, 17%);
+            transition: ease-in-out .15s background-color;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media all and (max-width: 735px) {
+  body>main {
+    justify-content: flex-start;
+    min-width: 320px;
+
+    .container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+
+      .card-1,
+      .card-2 {
+        width: 100%;
+        padding: 26px 26px 40px;
+      }
+
+      .card-1 {
+        border-radius: 0 0 32px 32px;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        .circle-result {
+          width: 140px;
+          height: 140px;
+          margin: 24px 0;
+
+          h1 {
+            font-size: 56px;
+            line-height: 1.25;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .description {
+          h2 {
+            font-size: 24px;
+            padding-bottom: 10px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .card-2 {
+        padding: 25px 30px 30px;
+
+        h3 {
+          font-size: 18px;
+        }
+
+        .continue {
+          margin-top: 24px;
+        }
+
+        article {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}

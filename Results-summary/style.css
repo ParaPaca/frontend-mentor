@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  font-family: "Hanken Grotesk", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  background-color: #ffffff;
+  height: 100svh;
+  height: 100vh;
+  width: 100%;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body main .container {
+  background-color: #ffffff;
+  box-shadow: 6px 20px 40px hsl(221, 100%, 96%);
+  width: 736px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+body main .container,
+body main .container .card-1 {
+  border-radius: 32px;
+}
+body main .container .card-1,
+body main .container .card-2 {
+  padding: 45px 40px;
+}
+body main .container .card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background-image: linear-gradient(hsl(251, 100%, 63%), hsl(242, 82%, 55%));
+  width: 50%;
+}
+body main .container .card-1 h1,
+body main .container .card-1 h2 {
+  color: #ffffff;
+}
+body main .container .card-1 h3 {
+  color: hsl(241, 100%, 89%);
+  font-size: 24px;
+  font-weight: 500;
+}
+body main .container .card-1 .circle-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(hsl(256, 72%, 46%) -10%, hsla(241, 72%, 46%, 0.3) 60%, hsla(241, 72%, 46%, 0.05) 100%);
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin: 34px 0 28px;
+}
+body main .container .card-1 .circle-result h1 {
+  font-size: 70px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+body main .container .card-1 .circle-result p {
+  color: #857CF4;
+  font-size: 18px;
+  font-weight: 700;
+}
+body main .container .card-1 .description {
+  width: 90%;
+}
+body main .container .card-1 .description h2 {
+  font-size: 32px;
+  font-weight: 500;
+  padding-bottom: 15px;
+}
+body main .container .card-1 .description p {
+  font-size: 18px;
+  color: hsl(241, 100%, 89%);
+}
+body main .container .card-2 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+body main .container .card-2 h3 {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+body main .container .card-2 article {
+  margin-top: 16px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px 1fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  height: 56px;
+  border-radius: 12px;
+  padding: 18px 16px;
+  font-size: 18px;
+}
+body main .container .card-2 article h4 {
+  justify-self: flex-start;
+  line-height: 1;
+}
+body main .container .card-2 article p {
+  justify-self: flex-end;
+  font-weight: 800;
+  color: hsl(224, 30%, 27%);
+}
+body main .container .card-2 article p span {
+  color: #9a9a9a;
+  padding-left: 7px;
+}
+body main .container .card-2 article:nth-of-type(1) {
+  background-color: hsl(6, 100%, 98%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(1):hover {
+  background-color: hsl(6, 100%, 88%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(1):hover h4 {
+  color: hsl(0, 100%, 47%);
+  transition: ease-in-out 0.15s color;
+}
+body main .container .card-2 article:nth-of-type(1) h4 {
+  color: hsl(0, 100%, 67%);
+  transition: ease-in-out 0.15s color;
+}
+body main .container .card-2 article:nth-of-type(2) {
+  background-color: hsl(42, 100%, 97%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(2):hover {
+  background-color: hsl(42, 100%, 87%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(2):hover h4 {
+  color: hsl(39, 100%, 36%);
+  transition: ease-in-out 0.15s color;
+}
+body main .container .card-2 article:nth-of-type(2) h4 {
+  color: hsl(39, 100%, 56%);
+  transition: ease-in-out 0.15s color;
+}
+body main .container .card-2 article:nth-of-type(3) {
+  background-color: hsl(173, 53%, 97%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(3):hover {
+  background-color: hsl(173, 53%, 87%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(3):hover h4 {
+  color: hsl(166, 100%, 17%);
+  transition: ease-in-out 0.15s color;
+}
+body main .container .card-2 article:nth-of-type(3) h4 {
+  transition: ease-in-out 0.15s color;
+  color: hsl(166, 100%, 37%);
+}
+body main .container .card-2 article:nth-of-type(4) {
+  background-color: hsl(240, 71%, 97%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(4):hover {
+  background-color: hsl(240, 71%, 87%);
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 article:nth-of-type(4):hover h4 {
+  color: hsl(234, 85%, 35%);
+  transition: ease-in-out 0.15s color;
+}
+body main .container .card-2 article:nth-of-type(4) h4 {
+  transition: ease-in-out 0.15s color;
+  color: hsl(234, 85%, 45%);
+}
+body main .container .card-2 .continue {
+  align-self: center;
+  margin-top: 40px;
+  width: 100%;
+  background-color: hsl(224, 30%, 27%);
+  padding: 16px 0;
+  text-align: center;
+  border-radius: 40px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: ease-in-out 0.15s background-color;
+}
+body main .container .card-2 .continue:hover {
+  background-color: hsl(224, 30%, 17%);
+  transition: ease-in-out 0.15s background-color;
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 735px) {
+  body > main {
+    justify-content: flex-start;
+    min-width: 320px;
+  }
+  body > main .container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  body > main .container .card-1,
+  body > main .container .card-2 {
+    width: 100%;
+    padding: 26px 26px 40px;
+  }
+  body > main .container .card-1 {
+    border-radius: 0 0 32px 32px;
+  }
+  body > main .container .card-1 h3 {
+    font-size: 18px;
+  }
+  body > main .container .card-1 .circle-result {
+    width: 140px;
+    height: 140px;
+    margin: 24px 0;
+  }
+  body > main .container .card-1 .circle-result h1 {
+    font-size: 56px;
+    line-height: 1.25;
+  }
+  body > main .container .card-1 .circle-result p {
+    font-size: 16px;
+  }
+  body > main .container .card-1 .description h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+  }
+  body > main .container .card-1 .description p {
+    font-size: 16px;
+  }
+  body > main .container .card-2 {
+    padding: 25px 30px 30px;
+  }
+  body > main .container .card-2 h3 {
+    font-size: 18px;
+  }
+  body > main .container .card-2 .continue {
+    margin-top: 24px;
+  }
+  body > main .container .card-2 article {
+    font-size: 16px;
+  }
+}/*# sourceMappingURL=style.css.map */

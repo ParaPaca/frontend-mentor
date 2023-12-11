@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <script id="result-template" type="text/x-handlebars-template">
+    {{#each results}}
+      <article>
+        <img src="{{icon}}" alt="{{category}}-icon">
+        <h4>{{category}}</h4>
+        <p>{{score}}<span>/ 100</span></p>
+      </article>
+    {{/each}}
+  </script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <section class="card-1">
+        <h3>Your Result</h3>
+        <div class="circle-result">
+          <h1 class="finish-points">76</h1>
+          <p class="max-points">of 100</p>
+        </div>
+        <div class="description">
+          <h2>Great</h2>
+          <p>You scored higher than 65% of the people who have taken these tests.</p>
+        </div>
+      </section>
+      <section id="result-container" class="card-2">
+        <h3>Summary</h3>
+      </section>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV"
+        target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/ParaPaca">ParaPaca</a>.
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
