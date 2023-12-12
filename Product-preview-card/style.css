@@ -1,0 +1,179 @@
+:root {
+  --montserrat: "Montserrat", sans-serif;
+  --fraunces: "Fraunces", serif;
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+}
+
+body {
+  background-color: var(--cream);
+  height: 100vh;
+  width: 100%;
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+body main .container {
+  background-color: var(--white);
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  border-radius: 10px;
+}
+body main .container section {
+  width: 50%;
+}
+body main .container .img-wrapper {
+  background: url(./images/image-product-desktop.jpg) no-repeat center center/100%;
+  transition: background-size 0.2s ease-in-out;
+  border-radius: 10px 0 0 10px;
+}
+body main .container .img-wrapper:hover {
+  background-size: 110%;
+  transition: background-size 0.2s ease-in-out;
+}
+body main .container .info-card {
+  padding: 35px 32px 30px;
+}
+body main .container .info-card h3 {
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  color: var(--dark-grayish-blue);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding-bottom: 22px;
+  line-height: 1;
+}
+body main .container .info-card h1 {
+  font-family: var(--fraunces);
+  font-size: 32px;
+  line-height: 1;
+  font-weight: 700;
+  padding-bottom: 24px;
+}
+body main .container .info-card h1 + p {
+  font-family: var(--montserrat);
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--dark-grayish-blue);
+  padding-bottom: 30px;
+}
+body main .container .info-card .price-wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+}
+body main .container .info-card .price-wrapper h2 {
+  color: var(--dark-cyan);
+  font-size: 32px;
+  font-family: var(--fraunces);
+  line-height: 1;
+}
+body main .container .info-card .price-wrapper h2 + p {
+  font-family: var(--montserrat);
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+  font-size: 13px;
+  padding-left: 19px;
+}
+body main .container .info-card .add-to-cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 11px;
+  background-color: var(--dark-cyan);
+  transition: ease-in-out 0.2s background-color;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 7.5px;
+  color: var(--white);
+  margin-top: 28px;
+  font-family: var(--montserrat);
+  font-weight: 700;
+  font-size: 14px;
+}
+body main .container .info-card .add-to-cart:hover {
+  background-color: hsl(158, 36%, 27%);
+  cursor: pointer;
+  transition: ease-in-out 0.2s background-color;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: var(--montserrat);
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media all and (max-width: 600px) {
+  body main {
+    margin: 28px 16px 0;
+    justify-content: flex-start;
+  }
+  body main .attribution {
+    padding-bottom: 10px;
+  }
+  body main .container {
+    flex-direction: column;
+    width: 100%;
+    min-width: 288px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  body main .container section {
+    width: 100%;
+  }
+  body main .container .img-wrapper {
+    background: url(./images/image-product-mobile.jpg) no-repeat top center/cover;
+    min-height: 240px;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+  body main .container .info-card {
+    padding: 26px 24px 24px;
+  }
+  body main .container .info-card h3 {
+    padding-bottom: 14px;
+  }
+  body main .container .info-card h1 {
+    font-size: 32px;
+    line-height: 1;
+    padding-bottom: 16px;
+  }
+  body main .container .info-card h1 + p {
+    font-size: 14px;
+    line-height: 1.65;
+    padding-bottom: 24px;
+  }
+  body main .container .info-card .price-wrapper h2 {
+    font-size: 32px;
+    line-height: 1;
+  }
+  body main .container .info-card .price-wrapper h2 + p {
+    font-size: 13px;
+  }
+  body main .container .info-card .add-to-cart {
+    margin-top: 19px;
+  }
+}/*# sourceMappingURL=style.css.map */
