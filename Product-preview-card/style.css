@@ -150,6 +150,10 @@ body main .container .info-card .add-to-cart:hover {
     height: 100%;
     border-radius: 10px 10px 0 0;
   }
+  body main .container .img-wrapper:hover {
+    transition: none;
+    background-size: cover;
+  }
   body main .container .info-card {
     padding: 26px 24px 24px;
   }

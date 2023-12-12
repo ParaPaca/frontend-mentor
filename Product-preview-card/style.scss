@@ -166,6 +166,10 @@ body {
         min-height: 240px;
         height: 100%;
         border-radius: 10px 10px 0 0;
+        &:hover {
+          transition: none;
+          background-size: cover;
+        }
       }
 
       .info-card {
