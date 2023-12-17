@@ -27,29 +27,28 @@ body main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  padding-top: 175px;
+  margin-bottom: 30px;
 }
 body main .container {
   background-color: var(--white);
   width: 600px;
   display: flex;
   flex-direction: row;
-  margin-bottom: 30px;
   border-radius: 10px;
-}
-body main .container section {
-  width: 50%;
 }
 body main .container .img-wrapper {
   background: url(./images/image-product-desktop.jpg) no-repeat center center/100%;
   transition: background-size 0.2s ease-in-out;
   border-radius: 10px 0 0 10px;
+  width: 50%;
 }
 body main .container .img-wrapper:hover {
   background-size: 110%;
   transition: background-size 0.2s ease-in-out;
 }
 body main .container .info-card {
+  width: 50%;
   padding: 35px 32px 30px;
 }
 body main .container .info-card h3 {
@@ -127,24 +126,22 @@ body main .container .info-card .add-to-cart:hover {
 }
 
 @media all and (max-width: 600px) {
-  body main {
-    margin: 28px 16px 0;
-    justify-content: flex-start;
-  }
-  body main .attribution {
+  body .attribution {
     padding-bottom: 10px;
+  }
+  body main {
+    padding: 28px 16px 0;
+    justify-content: flex-start;
+    margin-bottom: 20px;
   }
   body main .container {
     flex-direction: column;
     width: 100%;
     min-width: 288px;
     border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  body main .container section {
-    width: 100%;
   }
   body main .container .img-wrapper {
+    width: 100%;
     background: url(./images/image-product-mobile.jpg) no-repeat top center/cover;
     min-height: 240px;
     height: 100%;
@@ -155,6 +152,7 @@ body main .container .info-card .add-to-cart:hover {
     background-size: cover;
   }
   body main .container .info-card {
+    width: 100%;
     padding: 26px 24px 24px;
   }
   body main .container .info-card h3 {

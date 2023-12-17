@@ -27,24 +27,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    padding-top: 175px;
+    margin-bottom: 30px;
 
     .container {
       background-color: var(--white);
       width: 600px;
       display: flex;
       flex-direction: row;
-      margin-bottom: 30px;
       border-radius: 10px;
-
-      section {
-        width: 50%;
-      }
 
       .img-wrapper {
         background: url(./images/image-product-desktop.jpg) no-repeat center center / 100%;
         transition: background-size .2s ease-in-out;
         border-radius: 10px 0 0 10px;
+        width: 50%;
 
         &:hover {
           background-size: 110%;
@@ -53,6 +50,7 @@ body {
       }
 
       .info-card {
+        width: 50%;
         padding: 35px 32px 30px;
 
         h3 {
@@ -142,69 +140,70 @@ body {
 }
 
 @media all and (max-width: 600px) {
-  body main {
-    margin: 28px 16px 0;
-    justify-content: flex-start;
-
+  body {
     .attribution {
       padding-bottom: 10px;
     }
 
-    .container {
-      flex-direction: column;
-      width: 100%;
-      min-width: calc(320px - (16px * 2));
-      border-radius: 10px;
+    main {
+      padding: 28px 16px 0;
+      justify-content: flex-start;
       margin-bottom: 20px;
 
-      section {
+      .container {
+        flex-direction: column;
         width: 100%;
-      }
+        min-width: calc(320px - (16px * 2));
+        border-radius: 10px;
 
-      .img-wrapper {
-        background: url(./images/image-product-mobile.jpg) no-repeat top center / cover;
-        min-height: 240px;
-        height: 100%;
-        border-radius: 10px 10px 0 0;
-        &:hover {
-          transition: none;
-          background-size: cover;
-        }
-      }
+        .img-wrapper {
+          width: 100%;
+          background: url(./images/image-product-mobile.jpg) no-repeat top center / cover;
+          min-height: 240px;
+          height: 100%;
+          border-radius: 10px 10px 0 0;
 
-      .info-card {
-        padding: 26px 24px 24px;
-
-        h3 {
-          padding-bottom: 14px;
+          &:hover {
+            transition: none;
+            background-size: cover;
+          }
         }
 
-        h1 {
-          font-size: 32px;
-          line-height: 1;
-          padding-bottom: 16px;
-        }
+        .info-card {
+          width: 100%;
+          padding: 26px 24px 24px;
 
-        h1+p {
-          font-size: 14px;
-          line-height: 1.65;
-          padding-bottom: 24px;
-        }
+          h3 {
+            padding-bottom: 14px;
+          }
 
-        .price-wrapper {
-
-          h2 {
+          h1 {
             font-size: 32px;
             line-height: 1;
+            padding-bottom: 16px;
           }
 
-          h2+p {
-            font-size: 13px;
+          h1+p {
+            font-size: 14px;
+            line-height: 1.65;
+            padding-bottom: 24px;
           }
-        }
 
-        .add-to-cart {
-          margin-top: 19px;
+          .price-wrapper {
+
+            h2 {
+              font-size: 32px;
+              line-height: 1;
+            }
+
+            h2+p {
+              font-size: 13px;
+            }
+          }
+
+          .add-to-cart {
+            margin-top: 19px;
+          }
         }
       }
     }
