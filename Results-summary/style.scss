@@ -223,11 +223,9 @@ body {
           border-radius: 40px;
           color: #ffffff;
           font-size: 18px;
-          transition: ease-in-out .15s background-color;
 
           &:hover {
-            background-color: hsl(224, 30%, 17%);
-            transition: ease-in-out .15s background-color;
+            background-image: linear-gradient(hsl(251, 100%, 63%), hsl(242, 82%, 55%));
             cursor: pointer;
           }
         }

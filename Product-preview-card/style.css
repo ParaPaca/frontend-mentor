@@ -111,7 +111,7 @@ body main .container .info-card .add-to-cart {
   font-size: 14px;
 }
 body main .container .info-card .add-to-cart:hover {
-  background-color: hsl(158, 36%, 27%);
+  background-color: hsl(156, 42%, 18%);
   cursor: pointer;
   transition: ease-in-out 0.2s background-color;
 }
