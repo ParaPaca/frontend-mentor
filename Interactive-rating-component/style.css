@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(228, 11%, 9%);
+  color: hsl(0, 0%, 100%);
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  height: 100dvh;
+}
+body main {
+  width: clamp(326px, 80vw, 410px);
+  margin-bottom: 20px;
+}
+body main .container {
+  background-image: linear-gradient(0deg, #171e28 0%, #222933 100%);
+  box-shadow: 0px -87px 100px -20px rgb(23, 30, 40) inset;
+  border-radius: clamp(12px, 3vw, 30px);
+  padding-block: clamp(24px, 3vw, 32px) 16px;
+  padding-inline: clamp(24px, 3vw, 32px) clamp(24px, 3vw, 38px);
+}
+body main .container .description {
+  font-size: clamp(14px, 3vw, 15px);
+  line-height: 1.6;
+  color: hsl(217, 12%, 63%);
+}
+body main .container h1 {
+  margin-top: clamp(20px, 3vw, 32px);
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: clamp(24px, 5vw, 28px);
+}
+body main .container button {
+  font-weight: 400;
+  font-family: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body main .container .rate-card .icon-wrapper {
+  background-color: #262F38;
+  width: clamp(40px, 5vw, 48px);
+  height: clamp(40px, 5vw, 48px);
+  border-radius: 100%;
+  display: grid;
+  place-content: center;
+}
+body main .container .rate-card .icon-wrapper img {
+  width: clamp(14px, 2vw, 17px);
+  height: clamp(13px, 2vw, 16px);
+}
+body main .container .rate-card .description {
+  margin-bottom: 26px;
+}
+body main .container .rate-card .rate-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+body main .container .rate-card .rate-wrapper .rate {
+  background-color: #262F38;
+  width: clamp(42px, 10vw, 50px);
+  height: clamp(42px, 10vw, 50px);
+  border-radius: 100%;
+  color: hsl(217, 12%, 63%);
+  font-weight: 500;
+  font-size: clamp(13px, 3vw, 16px);
+  cursor: pointer;
+  transition: 0.2s ease-in-out background-color, color;
+}
+body main .container .rate-card .rate-wrapper .rate:hover {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s ease-in-out background-color, color;
+}
+body main .container .rate-card .rate-wrapper .rate:active {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s ease-in-out background-color, color;
+}
+body main .container .rate-card .submit {
+  letter-spacing: 2px;
+  margin-top: clamp(24px, 3vw, 32px);
+  margin-bottom: 16px;
+  width: 100%;
+  background-color: hsl(25, 97%, 53%);
+  padding: 16px 0;
+  line-height: 1;
+  border-radius: 30px;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 100%);
+  font-size: clamp(14px, 3vw, 15px);
+  transition: 0.2s ease-in-out background-color, color;
+}
+body main .container .rate-card .submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  cursor: pointer;
+  transition: 0.2s ease-in-out background-color, color;
+}
+body main .container .thanks-card {
+  display: none;
+  flex-direction: column;
+  text-align: center;
+}
+body main .container .thanks-card .img-wrapper,
+body main .container .thanks-card .text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body main .container .thanks-card .img-wrapper {
+  margin: 12px 0 clamp(24px, 3vw, 32px);
+}
+body main .container .thanks-card .img-wrapper img {
+  width: clamp(144px, 30vw, 162px);
+}
+body main .container .thanks-card .text-wrapper .selected-rate {
+  color: hsl(25, 60%, 59%);
+  padding: 8px clamp(12px, 2vw, 18px);
+  background-color: #262F38;
+  border-radius: 20px;
+  font-size: clamp(14px, 2vw, 15px);
+}
+body main .container .thanks-card h1 {
+  margin-top: clamp(26px, 3vw, 32px);
+}
+body main .container .thanks-card .description {
+  margin-bottom: 18px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(25, 60%, 59%);
+}/*# sourceMappingURL=style.css.map */
