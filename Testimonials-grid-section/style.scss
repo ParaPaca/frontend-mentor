@@ -1,0 +1,210 @@
+//Neutral
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(213, 44%, 95%);
+//Primary
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  background-color: $light-grayish-blue;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  place-content: center;
+
+  main {
+    display: grid;
+    place-content: center;
+    width: clamp(326px, 87vw, 1110px);
+    margin-bottom: 20px;
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: auto auto;
+      grid-auto-flow: column;
+      grid-template-areas:
+        "card-1 card-1 card-2 card-5"
+        "card-3 card-4 card-4 card-5";
+      row-gap: 24px;
+      column-gap: 30px;
+        
+        
+      .card {
+        height: auto;
+        width: 100%;
+        border-radius: 8px;
+        background-color: $white;
+        padding: 24px 30px 28px 32px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: 30px 50px 50px -30px rgba($very-dark-blackish-blue, .2);
+
+        .creator-wrapper {
+          margin-bottom: 18px;
+          display: flex;
+          align-items: center;
+          gap: 16px;
+
+          .img-wrapper {
+            width: 32px;
+            height: 32px;
+
+            img {
+              width: inherit;
+              height: inherit;
+              border-radius: 100%;
+            }
+          }
+
+          .name-wrapper {
+            h2 {
+              font-size: 13px;
+              font-weight: 500;
+              line-height: 1.3;
+            }
+
+            h2+p {
+              font-size: 11px;
+              opacity: .5;
+              font-weight: 400;
+              line-height: 1.2;
+            }
+          }
+        }
+
+        h1 {
+          font-size: 19px;
+          font-weight: 600;
+          letter-spacing: .4px;
+          line-height: 1.3;
+          margin-bottom: 16px;
+        }
+        
+        h1+p {
+          line-height: 1.4;
+          font-size: 13px;
+          opacity: .7;
+          font-weight: 300;
+        }
+      }
+
+      .card:nth-child(1) {
+        img {
+          border: rgba($white, .3) 2px solid;
+        }
+        color: #FFF7FF;
+        grid-area: card-1;
+        // background-color: $moderate-violet;
+        background: $moderate-violet url(./images/bg-pattern-quotation.svg) no-repeat top right clamp(24px, 6vw, 80px);
+        h1+p {
+          letter-spacing: .2px;
+        }
+      }
+
+      .card:not(:nth-child(1),:nth-child(4)) {
+        .img-wrapper {
+          width: 28px;
+          height: 28px;
+        }
+      }
+      .card:not(:nth-child(1),:nth-child(2)) {
+        padding-bottom: 24px;
+        .creator-wrapper {margin-bottom: 18px;}
+        h1 {margin-bottom: 22px;}
+      }
+
+      .card:nth-child(2) {
+        grid-area: card-2;
+        background-color: $very-dark-grayish-blue;
+        color: $white;
+        h1+p {
+          letter-spacing: .2px;
+        }
+      }
+
+      .card:nth-child(3) {
+        grid-area: card-3;
+        color: $very-dark-grayish-blue;
+        h1+p {
+          letter-spacing: .2px;
+          font-weight: 500;
+        }
+      }
+      
+      .card:nth-child(4) {
+        background-color: $very-dark-blackish-blue;
+        grid-area: card-4;
+        color: #ECF3FD;
+        img {
+          border: rgba($moderate-violet, .9) 2px solid;
+        }
+        h1+p {
+          letter-spacing: .2px;
+        }
+      }
+      
+      .card:nth-child(5) {
+        grid-area: card-5;
+        color: $very-dark-grayish-blue;
+
+        .creator-wrapper h2+p,
+        h1+p {font-weight: 500;}
+      }
+    }
+
+
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: hsl(228, 45%, 44%);
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    height: 100%;
+    margin-block: 70px;
+    main .container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+        "card-1 card-1 card-2"
+        "card-3 card-4 card-4"
+        "card-5 card-5 card-5";
+  }}
+}
+
+@media screen and (max-width: 768px) {
+  body main .container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card-1"
+        "card-2"
+        "card-3"
+        "card-4" 
+        "card-5";
+
+        .card:not(:nth-child(1),:nth-child(2)) {
+          padding-bottom: 28px;
+          .creator-wrapper {margin-bottom: 18px;}
+          h1 {margin-bottom: 16px;}
+        }
+  }
+}
