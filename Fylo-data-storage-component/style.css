@@ -73,7 +73,6 @@ main .card1 {
 }
 .actions-wrapper button img {
   transition: transform 0.2s ease;
-  scale: 1;
 }
 .actions-wrapper button img:hover {
   transform: scale(1.2);

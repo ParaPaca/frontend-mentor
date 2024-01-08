@@ -78,7 +78,6 @@ main .card1 {
 
     & img {
       transition: transform .2s ease;
-      scale: 1;
 
       &:hover {
         transform: scale(1.2);
