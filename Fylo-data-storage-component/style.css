@@ -33,8 +33,6 @@ body {
   background: var(--very-dark-blue) url(./images/bg-desktop.png) no-repeat bottom center/100%;
   height: 100vh;
   height: 100dvh;
-  display: grid;
-  place-content: center;
 }
 body main {
   display: grid;
@@ -45,8 +43,9 @@ body main {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
+  display: grid;
+  place-content: center;
 }
 
 main .card1 {
