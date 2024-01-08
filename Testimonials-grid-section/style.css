@@ -21,38 +21,38 @@ body main {
   grid-template-rows: auto auto;
   grid-auto-flow: column;
   grid-template-areas: "card-1 card-1 card-2 card-5" "card-3 card-4 card-4 card-5";
-  row-gap: 24px;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  row-gap: 1.5rem;
+  -moz-column-gap: 1.875rem;
+       column-gap: 1.875rem;
 }
 
 .container {
   display: grid;
   place-content: center;
-  width: clamp(326px, 87vw, 1110px);
-  margin-bottom: 20px;
+  width: clamp(20.375rem, 87vw, 69.375rem);
+  margin-bottom: 1.25rem;
 }
 
 .card {
   height: auto;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: hsl(0, 0%, 100%);
-  padding: 24px 30px 28px 32px;
+  padding: 1.5rem 1.875rem 1.75rem 2rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 30px 50px 50px -30px rgba(25, 33, 46, 0.2);
+  box-shadow: 1.875rem 3.125rem 3.125rem -1.875rem rgba(25, 33, 46, 0.2);
 }
 .card h1 {
-  font-size: 19px;
+  font-size: 1.1875rem;
   font-weight: 600;
-  letter-spacing: 0.4px;
+  letter-spacing: 0.025rem;
   line-height: 1.3;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
 }
 .card h1 + p {
   line-height: 1.4;
-  font-size: 13px;
+  font-size: 0.8125rem;
   opacity: 0.7;
   font-weight: 300;
 }
@@ -60,28 +60,28 @@ body main {
 .card1 {
   color: #FFF7FF;
   grid-area: card-1;
-  background: hsl(263, 55%, 52%) url(./images/bg-pattern-quotation.svg) no-repeat top right clamp(24px, 6vw, 80px);
+  background: hsl(263, 55%, 52%) url(./images/bg-pattern-quotation.svg) no-repeat top right clamp(1.5rem, 6vw, 5rem);
 }
 .card1 img {
-  border: rgba(255, 255, 255, 0.3) 2px solid;
+  border: rgba(255, 255, 255, 0.3) 0.125rem solid;
 }
 .card1 h1 + p {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .card:not(.card1, .card4) .img-wrapper {
-  width: 28px;
-  height: 28px;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 .card:not(.card1, .card2) {
-  padding-bottom: 24px;
+  padding-bottom: 1.5rem;
 }
 .card:not(.card1, .card2) .creator-wrapper {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 .card:not(.card1, .card2) h1 {
-  margin-bottom: 22px;
+  margin-bottom: 1.375rem;
 }
 
 .card2 {
@@ -90,7 +90,7 @@ body main {
   color: hsl(0, 0%, 100%);
 }
 .card2 h1 + p {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .card3, .card5 {
@@ -104,7 +104,7 @@ body main {
   grid-area: card-3;
 }
 .card3 h1 + p {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .card4 {
@@ -113,10 +113,10 @@ body main {
   color: #ECF3FD;
 }
 .card4 img {
-  border: rgba(117, 65, 200, 0.9) 2px solid;
+  border: rgba(117, 65, 200, 0.9) 0.125rem solid;
 }
 .card4 h1 + p {
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
 }
 
 .card5 {
@@ -124,15 +124,15 @@ body main {
 }
 
 .creator-wrapper {
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 1rem;
 }
 
 .img-wrapper {
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }
 .img-wrapper img {
   width: inherit;
@@ -141,47 +141,47 @@ body main {
 }
 
 .name-wrapper h2 {
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-weight: 500;
   line-height: 1.3;
 }
 .name-wrapper h2 + p {
-  font-size: 11px;
+  font-size: 0.6875rem;
   opacity: 0.5;
   font-weight: 400;
   line-height: 1.2;
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.6875rem;
   text-align: center;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64rem) {
   body {
     height: 100%;
-    margin-block: 70px;
+    margin-block: 4.375rem;
   }
   body .container main {
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "card-1 card-1 card-2" "card-3 card-4 card-4" "card-5 card-5 card-5";
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 48rem) {
   body .container main {
     grid-template-columns: 1fr;
     grid-template-areas: "card-1" "card-2" "card-3" "card-4" "card-5";
   }
   body .container main .card:not(.card1, .card2) {
-    padding-bottom: 28px;
+    padding-bottom: 1.75rem;
   }
   body .container main .card:not(.card1, .card2) .creator-wrapper {
-    margin-bottom: 18px;
+    margin-bottom: 1.125rem;
   }
   body .container main .card:not(.card1, .card2) h1 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
