@@ -36,6 +36,7 @@ a {
 }
 
 .button {
+  cursor: pointer;
   border-radius: 2.5rem;
   line-height: 1;
   font-size: clamp(.625rem, 1vw, .875rem);
@@ -121,13 +122,13 @@ body {
 }
 
 .button__pink {
-  background-color: var(--pink);
+  background-color: #A40067;
   color: var(--very-pale-cyan);
   box-shadow: 0rem .125rem .625rem rgba(#000, .1);
   transition: ease-in-out .2s background-color;
 
   &:hover {
-    background-color: var(--very-pale-pink);
+    background-color: var(--pink);
     transition: ease-in-out .2s background-color;
   }
 }
