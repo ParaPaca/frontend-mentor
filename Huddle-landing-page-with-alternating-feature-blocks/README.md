@@ -48,11 +48,17 @@ Users should be able to:
 First of all, I would like to say that at the time of writing this readme file, this project was the most difficult for me of all that I had done previously (in frontend-mentor and outside of it). Despite the fact that the level of this project is equal to JUNIOR, for me it turned out to be about a level more difficult.
 
 This case was a challenge for me. In it, I was able to apply the knowledge gained in the process of creating previous projects on frontend-mentor, namely:
+
 - HTML file structure - I started to devote more time to the structure of my projects so that it corresponds to the features of semantic layout.
+
 - BEM methodology - I began to adhere to the BEM methodology and follow the recommendations for writing and using CSS classes.
+
 - Classes - with each new project I try to simplify the structure of writing styles more and more. I began to overuse style nesting less, and also began to understate the specificity of classes as much as possible for better interaction with them.
+
 - CSS custom properties - I began to use custom properties more often, but at the same time I remember not to abuse them.
+
 - clamp() - I managed to delve deeply into the study of this function. It laid the foundation for my understanding of the max() and min() functions.
+
 - Position property - I still practice using this property in my projects, and also make sure not to overdo it.
 
 ### Continued development
