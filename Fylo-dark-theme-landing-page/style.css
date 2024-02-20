@@ -129,7 +129,7 @@ a:hover:not(.productive-section-wrap__text-wrap__link) {
 }
 
 .main__banner-section-wrap {
-  background: url(./images/bg-curvy-desktop.svg) no-repeat bottom center/100%;
+  background: url(images/bg-curvy-desktop.svg) no-repeat bottom center/100%;
   flex-direction: column;
   gap: clamp(2rem, 1.868rem + 0.563vw, 2.375rem);
   padding-bottom: clamp(8.125rem, 7.245rem + 3.756vw, 10.625rem);
@@ -238,7 +238,7 @@ a:hover:not(.productive-section-wrap__text-wrap__link) {
 .main__productive-section-wrap::before {
   position: absolute;
   content: "";
-  background: url(./images/bg-quotes.png) no-repeat bottom left clamp(2.5rem, 0.519rem + 8.451vw, 8.125rem)/clamp(1.375rem, 0.649rem + 3.099vw, 3.438rem);
+  background: url(images/bg-quotes.png) no-repeat bottom left clamp(2.5rem, 0.519rem + 8.451vw, 8.125rem)/clamp(1.375rem, 0.649rem + 3.099vw, 3.438rem);
   width: min(90rem, 94vw);
   height: 100%;
   bottom: 0;
@@ -553,7 +553,7 @@ a:hover:not(.productive-section-wrap__text-wrap__link) {
 }
 @media screen and (max-width: 48rem) {
   .main__banner-section-wrap {
-    background-image: url(./images/bg-curvy-mobile.svg);
+    background-image: url(images/bg-curvy-mobile.svg);
   }
   .main-info-wrap__address {
     padding-right: 0;
